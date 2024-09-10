@@ -30,6 +30,7 @@ about_content: | # this will include new lines to allow paragraphs
   코드의 품질과 시스템의 안정성을 중요하게 생각하여 <mark>테스트 코드</mark> 작성과 코드 리뷰를 주도적으로 진행해왔습니다. 
   최근에는 <mark>디지털서비스플랫폼 개발 지원</mark>을 위해 **대전에 6개월간 파견**되어 병무청 API 연계를 위해 <mark>PL</mark>로서 수행한 경험이 있으며,
   ’24년 6월에 <mark>서비스 오픈</mark>과 8월에 <mark>고도화 전환</mark>을 성공적으로 이끌었습니다.
+  <br><br>
   지속적인 성장을 위해 RESTful API 개발, 성능 최적화뿐만 아니라
   **Javascript, React, Typescript, React** 등 프론트엔드 기술에도 관심을 가지고 학습 중입니다.
 
