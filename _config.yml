@@ -23,14 +23,15 @@ github_username: changgyu-ryu
 # about_title: About Me
 about_profile_image: images/profile.png
 about_content: | # this will include new lines to allow paragraphs
-  Java & Spring 기반의 <mark>4년차</mark> **백엔드 개발자**로, **중앙부처 및 공공기관을 위한 대규모 정보시스템 구축 프로젝트에서 설계, 개발, 운영 경험**을 쌓았습니다. 
-  특히 <mark>차세대 사회보장정보시스템 구축 사업</mark>에 참여하여 **복잡한 비즈니스 로직**을 구현하고, 
+  Java & Spring 기반의 <mark>4년차</mark> **백엔드 개발자**로, 
+  **중앙부처 및 공공기관을 위한 대규모 정보시스템 구축 프로젝트에서 풍부한 설계, 개발, 운영 경험**을 보유하고 있습니다. 
+  <mark>차세대 사회보장정보시스템 구축 사업</mark> 참여를 통해 **복잡한 비즈니스 로직**을 구현하고, 
   **대용량 데이터를 효율적으로 처리하는 기술**을 습득했습니다.
   코드의 품질과 시스템의 안정성을 중요하게 생각하여 <mark>테스트 코드</mark> 작성과 코드 리뷰를 주도적으로 진행해왔습니다. 
-  <mark>디지털서비스플랫폼 개발 지원</mark>을 위해 **대전에 6개월 동안 투입**되어 병무청 API 연계를 위해 <mark>PL</mark>로서 수행한 경험이 있으며,
-  '24년 6월에 <mark>서비스 오픈</mark>과 8월에 <mark>고도화 전환</mark>까지 성공적으로 수행했습니다.
-  또한, 새로운 기술 습득에 대한 열정으로 RESTful API 개발, 성능 최적화,
-  그리고 **Javascript, React, Typescript, React** 등 프론트엔드 기술에 관심을 가지고 학습하고 있습니다.
+  최근에는 <mark>디지털서비스플랫폼 개발 지원</mark>을 위해 **대전에 6개월간 파견**되어 병무청 API 연계를 위해 <mark>PL</mark>로서 수행한 경험이 있으며,
+  '24년 6월에 <mark>서비스 오픈</mark>과 8월에 <mark>고도화 전환</mark>을 성공적으로 이끌었습니다.
+  지속적인 성장을 위해 RESTful API 개발, 성능 최적화뿐만 아니라
+  **Javascript, React, Typescript, React** 등 프론트엔드 기술에도 관심을 가지고 학습 중입니다.
 
 # Projects Section
 # projects_title: Projects
@@ -53,12 +54,45 @@ certification_content: |
 # more_title: A Little More About Me
 more_content: | # this will include new lines to allow paragraphs
   여러 기술 스택에 관심을 갖고 개인 프로젝트를 수행했습니다.
-   - [OMDb API 영화 찾기 홈페이지](https://github.com/ChangGyu-Ryu/vanillajs-movie-app): HTML, CSS, JavaScript, TypeScript를 활용한 OMDb API 영화 찾기 홈페이지 구현 [DEMO](https://vanillajs-movie-app-peach.vercel.app/#/)
-   - [아이패드 제품 페이지](https://github.com/ChangGyu-Ryu/apple-ipad-app): HTML, CSS, JavaScript를 활용한 아이패드 제품 페이지 구현 [DEMO](https://apple-ipad-app-liart.vercel.app/)
-   - [스타벅스 홈페이지](https://github.com/ChangGyu-Ryu/starbucks-vanila-app): HTML, CSS, JavaScript를 활용한 스타벅스 홈페이지 구현 [DEMO](https://spiffy-jalebi-958ea7.netlify.app/)
-   - [오버워치 캐릭터 선택 화면](https://github.com/ChangGyu-Ryu/overwatch-hero-selector): HTML, CSS를 활용한 오버워치 캐릭터 선택 화면 구현 [DEMO](https://main--overwatch-selector-hero.netlify.app/)
-   - [게시판 서비스](https://github.com/ChangGyu-Ryu/fastcampus-project-board): Spring Boot 3.2.2 기반의 게시판 서비스
-   - [게시판 관리자 서비스](https://github.com/ChangGyu-Ryu/fastcampus-project-board-admin): Spring Boot 3.2.2 기반의 게시판 관리 도구
+  - [OMDb API 영화 찾기 웹 애플리케이션](https://github.com/ChangGyu-Ryu/vanillajs-movie-app): HTML, CSS, JavaScript, TypeScript를 활용한 OMDb API 영화 찾기 홈페이지 구현 [DEMO](https://vanillajs-movie-app-peach.vercel.app/#/)
+    * OMDb API를 활용한 영화 검색 기능 구현
+    * TypeScript를 사용하여 타입 안정성 확보
+    * 모듈화된 구조로 코드 관리 및 유지보수성 향상
+    * Webpack을 이용한 프로젝트 번들링 및 최적화
+    * 반응형 디자인으로 다양한 디바이스 지원
+    * 학습 포인트: REST API 연동, 비동기 프로그래밍, 프론트엔드 상태 관리
+  - [애플 아이패드 제품 페이지 클론](https://github.com/ChangGyu-Ryu/apple-ipad-app): HTML, CSS, JavaScript를 활용한 아이패드 제품 페이지 구현 [DEMO](https://apple-ipad-app-liart.vercel.app/)
+    * 인터랙티브한 네비게이션 및 스크롤 효과 구현
+    * CSS Grid와 Flexbox를 활용한 레이아웃 구성
+    * JavaScript를 이용한 동적 콘텐츠 로딩 및 애니메이션 효과
+    * 학습 포인트: 고급 CSS 기법, 성능 최적화, 크로스 브라우징 호환성
+  - [스타벅스 홈페이지 클론](https://github.com/ChangGyu-Ryu/starbucks-vanila-app): HTML, CSS, JavaScript를 활용한 스타벅스 홈페이지 구현 [DEMO](https://spiffy-jalebi-958ea7.netlify.app/)
+    * 스타벅스 브랜드 아이덴티티를 반영한 디자인 구현
+    * 반응형 웹 디자인으로 모바일 환경 지원
+    * 슬라이더, 아코디언 메뉴 등 다양한 UI 컴포넌트 구현
+    * YouTube API를 활용한 비디오 섹션 구현
+    * ScrollMagic 라이브러리를 활용한 스크롤 애니메이션 효과
+    * 학습 포인트: 외부 라이브러리 활용, 인터랙티브 웹 디자인, 성능 최적화
+  - [오버워치 캐릭터 선택 화면](https://github.com/ChangGyu-Ryu/overwatch-hero-selector): HTML, CSS를 활용한 오버워치 캐릭터 선택 화면 구현 [DEMO](https://main--overwatch-selector-hero.netlify.app/)
+    * CSS Grid를 활용한 반응형 레이아웃 구현
+    * 호버 효과 및 트랜지션을 통한 인터랙티브한 UI 구현
+    * CSS 변수를 활용한 테마 색상 관리
+    * 학습 포인트: 고급 CSS 레이아웃 기법, 웹 성능 최적화
+  - [게시판 서비스](https://github.com/ChangGyu-Ryu/fastcampus-project-board): Spring Boot 3.2.2 기반의 게시판 서비스
+    * Spring Boot 3.2.2, JPA, Spring Security
+    * JPA를 활용한 효율적인 데이터 모델링 및 CRUD 기능 구현
+    * Spring Security를 이용한 견고한 인증/인가 시스템 구축
+    * RESTful API 설계 및 구현
+    * 테스트 주도 개발(TDD) 방식 적용
+    * 페이징 및 정렬 기능 구현으로 대용량 데이터 처리 최적화
+    * 학습 포인트: 백엔드 아키텍처 설계, 보안 처리, JPA 최적화
+  - [게시판 관리자 서비스](https://github.com/ChangGyu-Ryu/fastcampus-project-board-admin): Spring Boot 3.2.2 기반의 게시판 관리자 페이지 구현
+    * Spring Boot 3.2.2, JPA, Spring Security, Thymeleaf
+    * 관리자 전용 대시보드 UI 구현 (Thymeleaf 템플릿 엔진 활용)
+    * Spring Security를 활용한 관리자 권한 제어 시스템 구축
+    * 데이터 백업 및 복원 기능 구현
+    * 로깅 및 모니터링 시스템 통합
+    * 학습 포인트: 관리자 시스템 설계, 대용량 데이터 처리, 시스템 모니터링
 
 # Footer
 footer_show_references: true
