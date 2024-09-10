@@ -1,0 +1,11 @@
+<div class="container certification-container">
+  <h3>
+    {{ site.certification_title | default: "Certification & Additional
+    Experience" }}
+  </h3>
+  <div class="row clearfix">
+    <div class="col-md-12">
+      {{ site.certification_content | strip | markdownify }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+- layout: left
+  company: (주)브이티더블유
+  link: http://www.vtw.co.kr/
+  job_title: 선임 컨설턴트
+  dates: 2024.07 ~ 현재
+  quote: >
+    2024 디지털서비스플랫폼 개방지원 사업 제안
+  description: | # this will include new lines to allow paragraphs
+    * 기술 및 성능/품질 관련 제안서 작성
+    * 디지털플랫폼 서비스 이용 특성 분석, 프로젝트 과제 관련 제안
+- layout: left
+  company: (주)브이티더블유
+  link: http://www.vtw.co.kr/
+  job_title: 선임 컨설턴트
+  dates: 2023.12 ~ 2024.06
+  quote: >
+    디지털서비스플랫폼 개방지원 병무청 서비스 API 개발
+  description: | # this will include new lines to allow paragraphs
+    * 병무청 API 서비스 45종 분석 및 RESTful API 설계/개발
+    * CI(Connecting Information) 정보와 병적번호 연계 지원 로직 개발
+    * 암복호화 모듈 설치 및 적용
+    * API 인터페이스 정의서 작성 및 표준 API 적용 개발
+
+- layout: left
+  company: (주)브이티더블유
+  link: http://www.vtw.co.kr/
+  job_title: 전임 컨설턴트
+  dates: 2023.12 ~ 2024.06
+  quote: >
+    광주교육청 광주아이온(AI-ON) 교육플랫폼 구축 사업 제안
+  description: | # this will include new lines to allow paragraphs
+    * 기술 및 성능/품질 관련 제안서 작성
+    * 교육플랫폼 서비스 이용 특성, AI 기술 트렌드, 아키텍처 트렌드 분석 및 제안
+
+- layout: left
+  company: (주)브이티더블유
+  link: http://www.vtw.co.kr/
+  job_title: 컨설턴트/전임 컨설턴트
+  dates: 2020.10 ~ 2023.11
+  quote: >
+    차세대 사회보장정보시스템 구축 사업
+  description: | # this will include new lines to allow paragraphs
+    * Spring Framework, JavaScript, eXbuilder6, DevOnFramework 활용한 백엔드 및 프론트엔드 개발
+    * 복지서비스 사후관리, 임대주택 신청/관리, 상수도요금감면지원 등 핵심 모듈 구현
+    * 대규모 버그 해결 및 Code-Ray 취약점 개선으로 시스템 안정성 향상
+    * 개인정보보호를 위한 마스킹 처리 구현

@@ -1,0 +1,30 @@
+- layout: left
+  name: Backend
+  description: | # this will include new lines to allow paragraphs
+    * Java
+    * Spring Boot, Spring MVC, Spring Batch, Spring Security, Spring Data JPA
+    * JPA, Querydsl, Hibernate
+    * Junit5, Mockito
+    * Gradle, Maven
+    * IntelliJ, Eclipse, Visual Studio Code
+
+- layout: left
+  name: DataBase
+  description: | # this will include new lines to allow paragraphs
+    * MySQL, PostgreSQL
+    * Tomcat
+    * SVN, Git
+
+- layout: left
+  name: DevOps
+  description: | # this will include new lines to allow paragraphs
+    * Tomcat
+    * SVN, Git
+
+- layout: left
+  name: Frontend
+  description: | # this will include new lines to allow paragraphs
+    * JavaScript ES6, HTML5, CSS3
+    * Npm
+    * Lodash
+    * React, NodeJS, Typescript
