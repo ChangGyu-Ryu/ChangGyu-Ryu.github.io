@@ -1,11 +1,14 @@
-# 이력서
+# 류창규 포트폴리오
 
-- [템플릿](https://github.com/sproogen/modern-resume-theme)
-- [이력서 github-pages](https://changgyu-ryu.github.io/)
+Java·Spring 기반 업무시스템 웹 개발자 류창규의 경력 포트폴리오입니다.
 
-## 구동방법
+- Website: [changgyu-ryu.github.io](https://changgyu-ryu.github.io/)
+- Structure: static HTML, CSS, JavaScript
+
+## 로컬 미리보기
 
 ```bash
-bundle install
-bundle exec jekyll serve
+python3 -m http.server 4000
 ```
+
+브라우저에서 `http://localhost:4000`을 엽니다.
