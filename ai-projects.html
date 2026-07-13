@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#e8ebe7">
+    <meta name="description" content="류창규가 GPT·Codex를 활용해 기획·구현·검증한 다섯 가지 AI 협업 프로젝트 기록입니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="류창규 · AI 협업 프로젝트 기록">
+    <meta property="og:description" content="기획한 기능, 실제 구현 범위와 AI 협업 방식을 다섯 가지 프로젝트로 정리했습니다.">
+    <meta property="og:url" content="https://changgyu-ryu.github.io/ai-projects.html">
+    <meta property="og:image" content="https://changgyu-ryu.github.io/assets/og-ai-projects.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="류창규 AI 협업 프로젝트 기록">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://changgyu-ryu.github.io/ai-projects.html">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>류창규 · AI 협업 프로젝트 기록</title>
+    <script>document.documentElement.classList.add('js');</script>
+  </head>
+  <body class="page-ai">
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+    <div class="document">
+      <header class="site-header">
+        <nav class="site-nav shell" aria-label="주요 메뉴">
+          <a class="wordmark" href="index.html" aria-label="류창규 프로젝트 기록 홈으로">RC / PROJECT RECORD</a>
+          <div class="nav-links">
+            <a href="index.html#selected-work">업무 프로젝트</a>
+            <a href="#ai-projects">AI 프로젝트</a>
+            <a href="#ai-method">협업 방식</a>
+            <a href="#contact">연락처</a>
+          </div>
+        </nav>
+      </header>
+
+      <main id="main" tabindex="-1">
+        <section class="hero ai-hero shell" id="top" aria-labelledby="hero-title">
+          <div class="hero-copy reveal">
+            <p class="field-label signal">AI-ASSISTED BUILDS / 5 PROJECT RECORDS</p>
+            <p class="hero-profile">류창규 · Product direction, implementation &amp; verification</p>
+            <h1 id="hero-title">AI를 답변 도구가 아니라,<br>구현 과정의 협업자로 사용했습니다.</h1>
+            <p class="hero-lede">
+              해결할 문제와 품질 기준은 직접 정하고, GPT·Codex를 활용해 조사·설계·구현·검증 작업을
+              역할별로 나눴습니다. 아래 기록은 기획한 기능과 실제 구현 범위를 구분해 정리했습니다.
+            </p>
+            <a class="command-link" href="#ai-projects"><span>[ 01—05 ]</span> AI 프로젝트 기록 열기 <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <aside class="evidence-index reveal" aria-label="AI 프로젝트 기록 바로가기">
+            <p class="field-label">BUILD INDEX</p>
+            <ol>
+              <li><a href="#ai-case-01"><b>01</b><span>Xiaomi Reels Factory</span><span class="record-state">PROTOTYPE</span></a></li>
+              <li><a href="#ai-case-02"><b>02</b><span>Hero Town Wiki</span><span class="record-state">PRIVATE PREVIEW</span></a></li>
+              <li><a href="#ai-case-03"><b>03</b><span>Upbit Market Journal</span><span class="record-state">LOCAL APP</span></a></li>
+              <li><a href="#ai-case-04"><b>04</b><span>Retail Ops Console</span><span class="record-state">DEPLOYED</span></a></li>
+              <li><a href="#ai-case-05"><b>05</b><span>GreenPutt Prototype</span><span class="record-state">PUBLIC DEMO</span></a></li>
+            </ol>
+          </aside>
+
+          <dl class="hero-meta reveal">
+            <div><dt>HUMAN OWNERSHIP</dt><dd>문제 정의 · 방향 · 승인 기준</dd></div>
+            <div><dt>AI COLLABORATION</dt><dd>조사 · 설계 · 구현 · 테스트 · QA</dd></div>
+            <div><dt>DISCLOSURE</dt><dd>AI 내장 기능과 AI 협업 개발을 구분</dd></div>
+          </dl>
+        </section>
+
+        <section class="approach section shell" id="ai-method" aria-labelledby="method-title">
+          <div class="section-heading reveal">
+            <p class="section-code">00 / COLLABORATION MODEL</p>
+            <h2 id="method-title">사람의 판단과 AI의 실행 범위를 나눴습니다.</h2>
+          </div>
+          <ol class="approach-list">
+            <li class="approach-row reveal">
+              <p class="record-number">01</p>
+              <div><h3>문제와 완료 기준은 직접 정의했습니다.</h3><p>실제 사용 맥락, 필요한 기능, 공개 범위와 품질 기준을 먼저 정했습니다.</p></div>
+            </li>
+            <li class="approach-row reveal">
+              <p class="record-number">02</p>
+              <div><h3>AI의 역할과 결과물 기준을 구체화했습니다.</h3><p>조사·구현·검증 역할을 나누고, 문서·코드·테스트·리뷰 자료의 형식과 완료 조건을 정했습니다.</p></div>
+            </li>
+            <li class="approach-row reveal">
+              <p class="record-number">03</p>
+              <div><h3>실제 데이터와 테스트로 다시 확인했습니다.</h3><p>AI가 만든 결과를 그대로 채택하지 않고, 브라우저 확인·테스트·파일 검증과 사용자 피드백을 거쳐 보정했습니다.</p></div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="selected-work section shell" id="ai-projects" aria-labelledby="ai-projects-title">
+          <div class="section-heading reveal">
+            <p class="section-code">01—05 / AI BUILD RECORDS</p>
+            <h2 id="ai-projects-title">기획과 구현을 분리해 기록한 다섯 가지 사례</h2>
+          </div>
+
+          <article class="case ai-case reveal" id="ai-case-01">
+            <header class="case-meta">
+              <p class="record-number">01</p>
+              <div>
+                <p class="field-label">WORKFLOW PROTOTYPE</p>
+                <p>Xiaomi Reels Factory</p>
+                <p>GPT·Codex · Playwright · ffmpeg</p>
+              </div>
+            </header>
+            <div class="case-content">
+              <h3>제품 근거 조사부터 세로 영상 렌더·QA까지 연결한 제작 팩토리</h3>
+              <div class="case-field">
+                <p class="field-label">PROJECT INTENT</p>
+                <p>제품별 릴스 제작을 반복 가능한 공정으로 만들고, 홍보 문구의 공식 근거와 외부 영상 소스의 사용 조건을 결과물까지 추적할 수 있도록 기획했습니다.</p>
+              </div>
+              <div class="ai-feature-grid">
+                <div>
+                  <p class="field-label">PLANNED FEATURES</p>
+                  <ul>
+                    <li>근거 조사·콘텐츠 방향·자막·자산·레이아웃·렌더·QA를 9개 역할로 분리</li>
+                    <li>주장과 출처를 ID로 연결하는 claim/source 기록</li>
+                    <li>v1~v6 콘텐츠 방향 비교와 모바일 안전 영역 검증</li>
+                    <li>Playwright·ffmpeg 렌더와 Drive 해시 확인</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="field-label">IMPLEMENTED FEATURES</p>
+                  <ul>
+                    <li>제품 작업 폴더·brief·run state·캘린더·runbook을 만드는 CLI</li>
+                    <li>필수 CSV 스키마, 경로 안전성, 덮어쓰기 방지와 큐 upsert</li>
+                    <li>1080×1920·30fps·14~16초 MP4와 contact sheet 자동 생성</li>
+                    <li>8개 제품 폴더 구성, 4개 제품의 v1~v6 verifier 통과</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="case-field conclusion">
+                <p class="field-label">AI COLLABORATION</p>
+                <p>GPT·Codex를 단순 문구 생성기가 아니라 역할별 제작 에이전트로 사용하고, CSV·Markdown·run-state 계약으로 산출물을 연결했습니다. 현재 상태는 AI 협업형 반자동 프로토타입이며 앱 내부 LLM이나 자동 게시 기능은 포함하지 않습니다.</p>
+              </div>
+              <p class="case-stack"><span>VERIFIED SCOPE</span> 폴더 구조 · 영상 규격 · CSV 형식 · 렌더 산출물 · 해시</p>
+            </div>
+          </article>
+
+          <article class="case ai-case reveal" id="ai-case-02">
+            <header class="case-meta">
+              <p class="record-number">02</p>
+              <div>
+                <p class="field-label">PRIVATE PREVIEW</p>
+                <p>Hero Town Wiki</p>
+                <p>Unity data · Static web · Cloudflare</p>
+              </div>
+            </header>
+            <div class="case-content">
+              <h3>게임 데이터를 추출·조인해 만든 한국어 도감과 조합 실험 위키</h3>
+              <div class="case-field">
+                <p class="field-label">PROJECT INTENT</p>
+                <p>Unity IL2CPP 게임 설치 데이터에서 한국어 이름·스킬·이미지 자산을 재현 가능한 방식으로 추출하고, 검색과 조합 비교가 가능한 팬 위키로 구성하려고 했습니다.</p>
+              </div>
+              <div class="ai-feature-grid">
+                <div>
+                  <p class="field-label">PLANNED FEATURES</p>
+                  <ul>
+                    <li>용사·코스튬·몬스터·무기·재료를 아우르는 한국어 도감</li>
+                    <li>검색·정렬·필터와 카드·상세 화면</li>
+                    <li>추천 조합과 3인 커스텀 비교 실험실</li>
+                    <li>게임 에셋 기반 테마 배경과 세계관·패치 정보</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="field-label">IMPLEMENTED FEATURES</p>
+                  <ul>
+                    <li>용사 330·코스튬 108·몬스터 150·무기 246·재료 29 분류</li>
+                    <li>데이터 조인, 검색·필터, 상세·라이트박스와 전용 무기 연결</li>
+                    <li>436개 스킬 연구 노드와 3슬롯 조합 비교</li>
+                    <li>5종 테마 배경, 전용 에셋 렌더러와 관련 테스트 24개 통과</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="case-field conclusion">
+                <p class="field-label">AI COLLABORATION</p>
+                <p>제품 방향과 데이터 정확성 기준은 직접 정하고, GPT·Codex가 번들·IL2CPP 구조 조사, 추출·조인 스크립트, 프론트 구현, 브라우저 QA와 테스트를 수행했습니다. 결과는 인증과 검색 차단이 적용된 비공개 프리뷰로 운영했습니다.</p>
+              </div>
+              <p class="case-stack"><span>BOUNDARY</span> 비공식 팬 프로젝트 · 공개 서비스 및 공식 제휴로 표현하지 않음</p>
+            </div>
+          </article>
+
+          <article class="case ai-case reveal" id="ai-case-03">
+            <header class="case-meta">
+              <p class="record-number">03</p>
+              <div>
+                <p class="field-label">LOCAL macOS APP</p>
+                <p>Upbit Market Journal</p>
+                <p>Swift · WebSocket · Agent workflow</p>
+              </div>
+            </header>
+            <div class="case-content">
+              <h3>실시간 시장 상태와 판단 기록·사후 복기를 연결한 macOS 도구</h3>
+              <div class="case-field">
+                <p class="field-label">PROJECT INTENT</p>
+                <p>가격을 예측하거나 거래를 자동화하기보다, 시장을 볼 때 어떤 근거로 판단했는지 남기고 일정 기간 뒤 틀린 이유와 놓친 신호를 복기하도록 기획했습니다.</p>
+              </div>
+              <div class="ai-feature-grid">
+                <div>
+                  <p class="field-label">PLANNED FEATURES</p>
+                  <ul>
+                    <li>BTC·ETH·USDT의 원화 시세와 live/stale 상태</li>
+                    <li>뉴스·거시 맥락을 결합한 일일 스냅샷</li>
+                    <li>판단 기록, 7일 후 리뷰와 반복 오류 분석</li>
+                    <li>역할별 AI 에이전트와 사용자 승인 경계</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="field-label">IMPLEMENTED FEATURES</p>
+                  <ul>
+                    <li>Upbit WebSocket·CoinGecko 데이터 결합과 재연결 처리</li>
+                    <li>RSS 수집, Markdown 스냅샷과 메타데이터 파싱</li>
+                    <li>판단·리뷰·실수 태그·학습 내용을 저장하는 CLI와 보고서</li>
+                    <li>Agent Briefing·Council Packet·제안 결정 이력과 검증 도구</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="case-field conclusion">
+                <p class="field-label">AI COLLABORATION</p>
+                <p>Orchestrator·Market Data·Research·Journal·QA·Risk 역할과 승인 정책을 설계했습니다. 에이전트가 동일한 런타임 상태와 보고서를 읽도록 만들었지만, 완전 자율 LLM이 아니라 파일·CLI 기반 council과 사용자 승인 워크플로입니다.</p>
+              </div>
+              <p class="case-stack"><span>NOT INCLUDED</span> 자동매매 · 매수·매도 추천 · 수익 예측</p>
+            </div>
+          </article>
+
+          <article class="case ai-case reveal" id="ai-case-04">
+            <header class="case-meta">
+              <p class="record-number">04</p>
+              <div>
+                <p class="field-label">DEPLOYED WEB APP</p>
+                <p>Retail Ops Console</p>
+                <p>Next.js · Supabase · Cloudflare</p>
+              </div>
+            </header>
+            <div class="case-content">
+              <h3>현업 지식을 매출 정산·보고·재고·일정 기능으로 구조화한 운영 콘솔</h3>
+              <div class="case-field">
+                <p class="field-label">PROJECT INTENT</p>
+                <p>매장 오픈·마감 보고, 온·오프라인 매출 차액, 제품·재고 정보와 월간 근무 일정을 여러 파일과 메시지에서 찾던 업무를 하나의 관리자 웹서비스로 통합하려고 했습니다.</p>
+              </div>
+              <div class="ai-feature-grid">
+                <div>
+                  <p class="field-label">PLANNED FEATURES</p>
+                  <ul>
+                    <li>채널별 매출 정산과 차액 근거·미해소 항목 관리</li>
+                    <li>카카오톡 보고 파싱과 오픈·마감 보고서 생성</li>
+                    <li>제품 지식·재고번호 검색과 판매 시나리오</li>
+                    <li>근무표 인식, 수동 보정과 Google Calendar 동기화</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="field-label">IMPLEMENTED FEATURES</p>
+                  <ul>
+                    <li>ERP 조정·취소·환불을 반영한 정산 계산과 보고서</li>
+                    <li>다중 행 메시지 파싱·태깅·중복 제거와 원본 보관</li>
+                    <li>제품 카탈로그, Markdown 재고 파싱·SKU 매칭</li>
+                    <li>Local/Supabase 저장소, 관리자 인증·RLS와 Cloudflare 배포</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="case-field conclusion">
+                <p class="field-label">AI COLLABORATION</p>
+                <p>실제 업무 규칙과 예외 조건은 직접 설명하고 검수했으며, Codex가 이를 설계 문서·도메인 로직·테스트·관리자 화면·배포 구성으로 전환했습니다. 앱 내부 생성형 AI가 아니라 현업 지식을 AI와 함께 소프트웨어로 구조화한 사례입니다.</p>
+              </div>
+              <p class="case-stack"><span>VERIFICATION</span> 도메인 테스트 · lint · 인증/RLS · 배포 응답</p>
+            </div>
+          </article>
+
+          <article class="case ai-case reveal" id="ai-case-05">
+            <header class="case-meta">
+              <p class="record-number">05</p>
+              <div>
+                <p class="field-label">PUBLIC WEB DEMO</p>
+                <p>GreenPutt Prototype</p>
+                <p>Vanilla web · Canvas 2D · AI image workflow</p>
+              </div>
+            </header>
+            <div class="case-content">
+              <h3>최종 제품 사진과 자체 커머스가 준비되기 전에도 브랜드 가치를 설명하는 인터랙티브 웹</h3>
+              <div class="case-field">
+                <p class="field-label">PROJECT INTENT</p>
+                <p>프로토타입 단계의 퍼팅 브랜드가 핵심 가치인 ‘Zero Head-Up’을 설명하고, 판매 가능한 Polvert 상품은 기존 Imweb 스토어로 연결하도록 브랜드 경험과 커머스의 역할을 구분해 설계했습니다.</p>
+              </div>
+              <div class="ai-feature-grid">
+                <div>
+                  <p class="field-label">PLANNED FEATURES</p>
+                  <ul>
+                    <li>캠페인형 홈과 Zero Head-Up 제품 스토리</li>
+                    <li>제품 준비 상태에 따라 달라지는 CTA</li>
+                    <li>Imweb 구매 브리지와 문의·지원 흐름</li>
+                    <li>향후 Imweb 콘텐츠 블록으로 이전 가능한 모듈형 구조</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="field-label">IMPLEMENTED FEATURES</p>
+                  <ul>
+                    <li>포인터에 반응하는 퍼팅 거리·궤적·컵인 Canvas 2D 연출</li>
+                    <li>4단계 메커니즘 데모와 자동·수동 제품 캐러셀</li>
+                    <li>반응형 레이아웃, SEO·공유 메타와 Imweb 링크</li>
+                    <li>GitHub Pages 공개 데모 배포와 데스크톱·모바일 반복 브라우저 QA</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="case-field conclusion">
+                <p class="field-label">AI COLLABORATION</p>
+                <p>PM·브랜드·카피·이미지·프론트엔드·QA·보안 역할과 승인 기준을 나누어 AI 협업 프로세스를 운영했습니다. AI 이미지가 로고를 왜곡하는 문제는 빈 패치 생성 후 실제 로고를 표면 각도에 맞춰 합성하고 축 정렬 검수 이미지를 남기는 방식으로 보정했습니다.</p>
+              </div>
+              <p class="case-stack"><span>NOT INCLUDED</span> 자체 결제·회원·주문·문의 폼 · 실제 하드웨어 연동</p>
+              <p class="case-stack"><span>LIVE DEMO</span> <a href="https://micaelclaw.github.io/greenputt-website-test/" target="_blank" rel="noopener noreferrer">GreenPutt 공개 데모 ↗<span class="sr-only"> (새 탭에서 열림)</span></a></p>
+            </div>
+          </article>
+        </section>
+
+        <aside class="scope-note shell" aria-label="AI 프로젝트 공개 범위 안내">
+          <p class="section-code">DISCLOSURE NOTE</p>
+          <p>운영 데이터와 비공개 저장소는 공개하지 않고, 공개 가능한 데모만 링크했습니다. 모델 API가 제품 안에서 동작하는 경우와 GPT·Codex를 개발 과정에 활용한 경우를 구분해 표기했으며, 기획만 한 기능은 구현 완료로 표현하지 않았습니다.</p>
+        </aside>
+
+        <section class="contact shell" id="contact" aria-labelledby="contact-title">
+          <p class="section-code">06 / CONTACT</p>
+          <div>
+            <h2 id="contact-title" class="sr-only">연락처</h2>
+            <a class="contact-email" href="mailto:ckue21@gmail.com">ckue21@gmail.com</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="shell"><p><a href="index.html">← MAIN PROJECT RECORD</a></p><p>LAST REVISED · 2026.07.13</p></div>
+      </footer>
+    </div>
+
+    <script src="assets/main.js" defer></script>
+  </body>
+</html>

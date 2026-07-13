@@ -39,15 +39,15 @@
         <nav class="site-nav shell" aria-label="주요 메뉴">
           <a class="wordmark" href="#top" aria-label="류창규 프로젝트 기록 처음으로">RC / PROJECT RECORD</a>
           <div class="nav-links">
-            <a href="#approach">접근 방식</a>
             <a href="#selected-work">프로젝트</a>
             <a href="#tech">기술 맥락</a>
+            <a href="ai-projects.html">AI 프로젝트</a>
             <a href="#contact">연락처</a>
           </div>
         </nav>
       </header>
 
-      <main id="main">
+      <main id="main" tabindex="-1">
         <section class="hero shell" id="top" aria-labelledby="hero-title">
           <div class="hero-copy reveal">
             <p class="field-label signal">ENGINEERING DOSSIER / 3 PROJECT RECORDS</p>
@@ -63,9 +63,9 @@
           <aside class="evidence-index reveal" aria-label="프로젝트 기록 바로가기">
             <p class="field-label">EVIDENCE INDEX</p>
             <ol>
-              <li><a href="#case-01"><b>01</b><span>도요타 HR 시스템</span><time datetime="2025-02">2025.02</time></a></li>
-              <li><a href="#case-02"><b>02</b><span>차세대 사회보장정보시스템</span><time>2020.10–2023.11</time></a></li>
-              <li><a href="#case-03"><b>03</b><span>병무청 서비스 API</span><time>2023.12–2024.06</time></a></li>
+              <li><a href="#case-01"><b>01</b><span>도요타 HR 시스템</span><span class="record-state">2025.02</span></a></li>
+              <li><a href="#case-02"><b>02</b><span>차세대 사회보장정보시스템</span><span class="record-state">2020.10–2023.11</span></a></li>
+              <li><a href="#case-03"><b>03</b><span>병무청 서비스 API</span><span class="record-state">2023.12–2024.06</span></a></li>
             </ol>
           </aside>
 
@@ -222,8 +222,29 @@
           </dl>
         </section>
 
+        <section class="ai-teaser section shell" id="ai-projects" aria-labelledby="ai-teaser-title">
+          <div class="section-heading reveal">
+            <p class="section-code">06 / AI-ASSISTED BUILDS</p>
+            <h2 id="ai-teaser-title">AI와 함께 기획하고 구현한 프로젝트</h2>
+          </div>
+          <div class="ai-teaser-body reveal">
+            <p>
+              제품 방향과 승인 기준은 직접 정하고, GPT·Codex는 조사·설계·구현·테스트를 가속하는
+              협업 도구로 사용했습니다. 기획한 기능과 실제 구현 범위를 분리해 다섯 가지 사례로 정리했습니다.
+            </p>
+            <dl class="ledger ai-teaser-list">
+              <div><dt>PUBLIC WEB DEMO</dt><dd><strong>GreenPutt 브랜드 프로토타입</strong><span>Canvas 인터랙션과 AI 이미지 검수 워크플로</span></dd></div>
+              <div><dt>WORKFLOW PROTOTYPE</dt><dd><strong>Xiaomi Reels 제작 팩토리</strong><span>근거 조사부터 세로 영상 렌더·QA까지 연결</span></dd></div>
+              <div><dt>PRIVATE PREVIEW</dt><dd><strong>Hero Town 한국어 위키</strong><span>게임 데이터 추출·조인·검색·조합 실험실 구현</span></dd></div>
+              <div><dt>LOCAL macOS APP</dt><dd><strong>Upbit 시장 관찰 도구</strong><span>실시간 데이터·판단 기록·사후 복기·에이전트 협업</span></dd></div>
+              <div><dt>DEPLOYED WEB APP</dt><dd><strong>리테일 운영 콘솔</strong><span>매출 정산·보고·제품·재고·근무 일정 통합</span></dd></div>
+            </dl>
+            <a class="command-link" href="ai-projects.html"><span>[ 05 CASES ]</span> AI 프로젝트 기록 보기 <span aria-hidden="true">→</span></a>
+          </div>
+        </section>
+
         <section class="contact shell" id="contact" aria-labelledby="contact-title">
-          <p class="section-code">06 / CONTACT</p>
+          <p class="section-code">07 / CONTACT</p>
           <div>
             <h2 id="contact-title" class="sr-only">연락처</h2>
             <a class="contact-email" href="mailto:ckue21@gmail.com">ckue21@gmail.com</a>
