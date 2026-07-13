@@ -1,51 +1,49 @@
-const sectionLinks = [...document.querySelectorAll('.nav-links a')];
+const sectionLinks = [...document.querySelectorAll('.nav-links a')]
+  .filter((link) => link.getAttribute('href')?.startsWith('#'));
 const sections = sectionLinks
   .map((link) => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);
-
-if ('IntersectionObserver' in window && sections.length) {
-  const navObserver = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-      if (!visible) return;
-
-      sectionLinks.forEach((link) => {
-        const active = link.getAttribute('href') === `#${visible.target.id}`;
-        if (active) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
-      });
-    },
-    { rootMargin: '-20% 0px -60% 0px', threshold: [0.01, 0.2, 0.5] }
-  );
-
-  sections.forEach((section) => navObserver.observe(section));
-}
 
 const evidenceLinks = [...document.querySelectorAll('.evidence-index a')];
 const caseRecords = evidenceLinks
   .map((link) => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);
 
-if ('IntersectionObserver' in window && caseRecords.length) {
-  const evidenceObserver = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+const updateCurrentLocation = (links, targets) => {
+  const probe = Math.min(window.innerHeight * 0.38, 360);
+  const atDocumentEnd = Math.ceil(window.scrollY + window.innerHeight)
+    >= document.documentElement.scrollHeight - 2;
+  const candidates = atDocumentEnd ? [...targets].reverse() : targets;
+  const active = candidates.find((target) => {
+    const bounds = target.getBoundingClientRect();
+    if (atDocumentEnd) return bounds.top < window.innerHeight && bounds.bottom > 0;
+    return bounds.top <= probe && bounds.bottom > probe;
+  });
 
-      if (!visible) return;
+  links.forEach((link) => {
+    const isActive = active && link.getAttribute('href') === `#${active.id}`;
+    if (isActive) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
+};
 
-      evidenceLinks.forEach((link) => {
-        const active = link.getAttribute('href') === `#${visible.target.id}`;
-        if (active) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
-      });
-    },
-    { rootMargin: '-18% 0px -58% 0px', threshold: [0.01, 0.15, 0.35] }
-  );
+let locationUpdateQueued = false;
+let locationUpdateTimer;
 
-  caseRecords.forEach((record) => evidenceObserver.observe(record));
-}
+const updateLocations = () => {
+  updateCurrentLocation(sectionLinks, sections);
+  updateCurrentLocation(evidenceLinks, caseRecords);
+  locationUpdateQueued = false;
+};
+
+const queueLocationUpdate = () => {
+  window.clearTimeout(locationUpdateTimer);
+  locationUpdateTimer = window.setTimeout(updateLocations, 140);
+  if (locationUpdateQueued) return;
+  locationUpdateQueued = true;
+  window.requestAnimationFrame(updateLocations);
+};
+
+window.addEventListener('scroll', queueLocationUpdate, { passive: true });
+window.addEventListener('resize', queueLocationUpdate);
+window.requestAnimationFrame(updateLocations);
